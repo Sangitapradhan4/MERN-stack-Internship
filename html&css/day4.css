@@ -1,0 +1,67 @@
+.box{
+    background-color: rgb(226, 10, 89);
+    height: 400px;
+    width: 600px;
+    margin:40px ;
+   /* margin-left: 50px;
+    margin-top: 30px;*/
+
+    margin: 10px 30px 40px 100px;
+
+}
+#sp{
+    color: black;
+    text-align: center;
+}
+.friday{
+    font-size: 50px;
+    font-family: "Caveat", cursive;
+    font-weight: 900;
+    color: rgb(217, 230, 67);
+
+}
+.myicon{
+    color: blue;
+    font-size: 50px;
+}
+.nav ul{list-style: none;
+    padding: 0;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.nav ul li{
+    display: inline-block;
+    background-color: bisque;
+    padding:7px 14px;
+    margin-left: 21px;
+}
+.nav{
+    background-color: rgb(10, 163, 138);
+    padding: 10px 10px;
+
+}
+.parent{
+    width: 100%;
+    display: flex;
+}
+.child{
+    width: 50%;
+}
+.child2{
+    width: 50%;
+}
+.img{
+    width: 100%;
+}
+.but{
+    background-color: rgb(130, 226, 29);
+}
+.bgimg{
+    background-image: url(back1.jpg) ;
+    padding: 85px 0;
+    background-attachment: fixed;
+}

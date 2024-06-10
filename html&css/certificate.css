@@ -1,0 +1,22 @@
+.certificate{
+    position: relative;
+}
+.certificate-owner{
+    position: absolute;
+    bottom:22%;
+    right: 50%;
+}
+.sp{
+    color: black;
+    font-size: 40px;
+    font-family: cursive;
+}
+.img{
+    width: 100%;
+}
+.overflow{
+    width: 30%;
+    height: 300px;
+    background-color: blue;
+    overflow-y: scroll;
+}
