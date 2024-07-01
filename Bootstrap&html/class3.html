@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container pt-lg-4">
+    <table class="table table-success  table-striped-columns">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-info">
+            <th scope="row">1</th>
+            <td >Sangita</td>
+            <td >Pradhan</td>
+            <td >@sangi</td>
+          </tr>
+          <tr class="table-dark">
+            <th scope="row">2</th>
+            <td>Abhijit</td>
+            <td>Dwivedy</td>
+            <td>@abhi</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Ritesh shaoo</td>
+            <td>@ritu</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="container pt-lg-4">
+        <table class="table table-borderless table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-warning">
+                <th scope="row">1</th>
+                <td >Sangita</td>
+                <td >Pradhan</td>
+                <td >@sangi</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">2</th>
+                <td>sonali</td>
+                <td>Parida</td>
+                <td>@sonu</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Subhagayatree</td>
+                <td>@subhu</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+         <div class="container pt-lg-4">
+          <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Add to cart
+          </a>
+          <!--<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Click it
+          </button> !-->
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Ice-cream</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+             
+              <div>
+                <img src="Ice Cream.jpg" class="img-fluid" alt="">
+              </div>
+              <div>
+                <p><i>Ice cream is a frozen dessert typically made from milk or cream that has been flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit, such as strawberries or peaches. Food colouring is sometimes added in addition to stabilizers</i></p>
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Flavours
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" >chocolate Chip</a></li>
+                  <li><a class="dropdown-item" href="#">Butterscotch</a></li>
+                 <li><a class="dropdown-item" href="#">Vanilla</a></li>
+                 <li><a class="dropdown-item" href="#">Mint chocolate</a></li>
+                 <li><a class="dropdown-item" href="#">Strawberry</a></li>
+                    <li><a class="dropdown-item" href="#">Chocolate</a></li>
+                </ul>
+              </div>                
+            </div>
+          </div>
+
+
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Modal">
+            Click it
+            </button>
+
+<div class="modal fade" id="Modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="ModalLabel">Warning</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+      </div>
+      <div class="modal-body">
+        This website is Danger
+        <img src="warning.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-dark position-relative">
+  Inbox
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    99+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+          </div>
+
+          <div class="continer">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">On April 1, Odisha Day, also known as Utkala Dibasa, is celebrated to remember when Odisha became a state. People all over the state decorate their homes and public places with flags, banners, and flowers in the colours of the state flag. This shows how proud they are of Odisha's culture and history. </div>
+              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">On April 1, Odisha Day, also known as Utkala Dibasa, is celebrated to remember when Odisha became a state. People all over the state decorate their homes and public places with flags, banners, and flowers in the colours of the state flag. This shows how proud they are of Odisha's culture and history.</div>
+              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">On April 1, Odisha Day, also known as Utkala Dibasa, is celebrated to remember when Odisha became a state. People all over the state decorate their homes and public places with flags, banners, and flowers in the colours of the state flag. This shows how proud they are of Odisha's culture and history.</div>
+              <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">On April 1, Odisha Day, also known as Utkala Dibasa, is celebrated to remember when Odisha became a state. People all over the state decorate their homes and public places with flags, banners, and flowers in the colours of the state flag. This shows how proud they are of Odisha's culture and history.</div>
+            </div>
+          </div>   
+
+      
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
