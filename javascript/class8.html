@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: rgb(229, 157, 41);
+            color: white;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+<h3>Button show or not show</h3>
+
+<div id="name1" class="box1">
+<h1>I am Sangita Pradhan</h1>
+</div>
+<button onclick="handel()">Add /Remove</button>
+<button onclick="pagedirect()">Go To</button>
+<br>
+<div id="fruits"></div>
+<br>
+<div id="fruits1"></div>
+<br>
+<div id="fruits2"></div>
+<br>
+<div id="fruits3"></div>
+<br>
+<div id="fruits4"></div>
+
+<br>
+<h2>fahrenheit to celsius conversion</h2>
+<div id="conversion"></div>
+
+    <script>
+
+    function handel(){
+        let data =document.getElementById('name1');
+        
+    data.classList.toggle("box1")
+    }
+
+    function  pagedirect(){
+        window.location.replace("http://techzex.com/");
+    }
+    let fruits =["Apple","Orange","Mango"]
+    let position = fruits.lastIndexOf("Apple") +1;
+    document.getElementById('fruits').innerHTML ="apple is found in position- " + position;
+
+
+    let fruitss =["Apple","Orange","Mango","Banana","Grapes","Dragonfruit"]
+    document.getElementById('fruits1').innerHTML = fruitss;
+
+    fruitss.sort();
+    document.getElementById('fruits2').innerHTML = fruitss;
+
+    let fruit =["Apple","Orange","Mango","Banana","Grapes","Dragonfruit"]
+    fruit [3] = "pineapple";
+    document.getElementById('fruits3').innerHTML = fruit;
+
+function f (f){
+    return (f-32)*5/9;
+}
+let c =f(100)
+document.getElementById('conversion').innerHTML = c;
+
+
+    </script>      
+</body>
+</html>

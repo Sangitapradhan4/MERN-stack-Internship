@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Learn about function</h2>
+ <div id="add"></div>
+ <div id="sub"></div>
+ <div id="mul"></div>
+ <div id="div"></div>
+
+
+
+ <h3>Date format</h3>
+<ul>
+    <li>getfullyear()</li>
+    <li>getMonth() </li>
+    <li>getDate() </li>
+    <li>getDay() </li>
+    <li>getHours() </li>
+    <li>getMinutes() </li>
+    <li>getSecondS() </li>
+    <li>getMiliseconds</li>
+</ul>
+    <div id="year"></div>
+    <div id="month"></div>
+    <div id="date"></div>
+    <div id="day"></div>
+    <div id="hours"></div>
+    <div id="minutes"></div>
+    <div id="seconds"></div>
+    <div id="millisec"></div>
+
+
+<div id="name"></div>
+
+    <script>
+         function myfun(a,b){
+            return a * b;
+         }
+         let x = myfun(10,20);
+         document.getElementById('mul').innerHTML=x;
+          
+         function myfun1(a,b){
+            return a + b;
+         }
+         let y = myfun1(10,20);
+         document.getElementById('add').innerHTML=y;
+
+         function myfun2(a,b){
+            return a - b;
+         }
+         let z = myfun2(40,20);
+         document.getElementById('sub').innerHTML=z;
+
+         function myfun3(a,b){
+            return a / b;
+         }
+         let w = myfun3(60,20);
+         document.getElementById('div').innerHTML=w;
+
+       
+         let a = new Date();
+         document.getElementById('year').innerHTML=a.getFullYear();
+
+         let b = new Date();
+         document.getElementById('month').innerHTML=b.getMonth();
+         let c = new Date();
+         document.getElementById('date').innerHTML=c.getDate();
+         let d = new Date();
+         document.getElementById('day').innerHTML=d.getDay();
+         let e = new Date();
+         document.getElementById('hours').innerHTML=e.getHours();
+         let f = new Date();
+         document.getElementById('minutes').innerHTML=f.getMinutes();
+         let g = new Date();
+         document.getElementById('seconds').innerHTML=g.getSeconds();
+         let h = new Date();
+         document.getElementById('millisec').innerHTML=h.getMilliseconds();
+
+
+      const name ={
+        fn : "sangita",
+        ln : "pradhan",
+        Fullname : function(){
+            return this.fn + "" +this.ln;
+        }
+      }
+      document.getElementById('name').innerHTML=name.Fullname();
+
+
+
+    </script>
+</body>
+</html>

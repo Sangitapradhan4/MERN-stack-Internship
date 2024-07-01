@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html body #fullheight{
+    min-height: 100% !important;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+.container{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+}
+.calculator{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    height: 39%;
+}
+.calculator .span{
+    background-color: black;
+    color: white;
+    font-size: 321%;
+    justify-self: flex-end;
+}
+.buttons{
+    padding-top: 10%;
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* width: 100%;
+    height: 60%;
+    background-color: black;
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: 25% 25% 25% 25%; */
+}
+.digits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    color: white;
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+    padding: 10px;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+}
+.percent{
+    background-color: grey;
+    color: black;
+}
+.symbol1{
+    background-color: rgb(181, 181, 181);
+    border: 0;
+}
+.symbol2{
+    background-color: #FF9F0A;
+}
+.equal{
+      align-items: flex-end;
+}
+
+.numbers{
+ background-color: rgb(56, 52, 52);
+}
+.coma{
+    background-color: rgb(68, 67, 67);
+
+}
+.symbolzero{
+    background-color: rgb(68, 67, 67);
+    width: 300px;
+    grid-column: span 2;
+    border-radius: 160px;
+    border: none;
+}
+

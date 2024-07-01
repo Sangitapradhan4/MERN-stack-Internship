@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h3>current wish according to current time:</h3>
+    <div id="wish"></div>
+
+    <h4>create alert</h4>
+    <input type="text" id="age">
+    <button onclick="getdata()">Get Result</button>
+
+    <h3>for loop</h3>
+    <div id=""></div>
+
+    <script>
+        let a = new Date();
+        current_time = a.getHours();
+
+        if(current_time < 12){
+            msg = "Good Morning";
+        }
+        else if (current_time >= 12 && current_time < 16){
+            msg = "Good Afternoon";
+        }
+        else if (current_time > 16 && current_time < 22){
+            msg="Good Night";
+        }
+        else {
+            msg="Sleep Well";
+        }
+        document.getElementById('wish').innerHTML =msg;
+
+function getdata(){
+ let age = document.getElementById('age').value;
+
+ if(age > 18){
+    alert('you are eligible');
+ }
+ 
+  else if(age == 18){
+    alert('you are eligible');
+ }
+ 
+ else {
+    alert('you are not eligible');
+ }
+ 
+}
+ 
+let number="";
+for(let i = 0; i <10 ; i++){
+    number += i ;
+}
+console.log(number);
+
+
+
+
+    </script>
+</body>
+</html>

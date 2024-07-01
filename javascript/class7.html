@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h3>for loop</h3>
+    <div id="selecto"></div>
+
+    <h2>while loop use in console</h2>
+
+    <h3>do while loop</h3>
+    <div id="dw"></div>
+    <h2>switch case</h2>
+    <div id="day"></div>
+    <div id="month"></div>
+
+    <h3>For each</h3>
+    <script>
+        data=["ab","bc","s","ra","sn"];
+        let name ='';
+        for(let x = 0; x < data.length ; x++){
+           name += '<option>'+ data[x] +'</option>';
+        }
+            document.getElementById('selecto').innerHTML =name;
+
+
+              let s = 0;
+               num ='';
+
+             while (s<10)
+             {
+                s++;
+                num += "while number is-"+ s +"/n";
+             }
+             console.log(num);
+
+             let text =" ";
+             let i =0;
+             do{
+                text += i +"<br>";
+                 i++;
+             }
+             while(i < 5)
+             document.getElementById('dw').innerHTML =text;
+
+           let day;
+           switch(new Date().getDay()){
+            case 0:
+            day ="sunday";
+            break;
+            case 1:
+            day ="monday";
+            break;
+            case 2:
+            day ="tuesday";
+            break;
+            case 3:
+            day ="wednesday";
+            break;
+            case 4:
+            day ="thursday";
+            break;
+            case 5:
+            day ="friday";
+            break;
+            case 6:
+            day ="saturday";
+            break;
+            default:
+            day ="day not found";
+           }
+           document.getElementById('day').innerHTML ="today is" + day;
+
+
+
+           let month;
+           switch(new Date().getMonth()){
+            case 0:
+            month ="january";
+            break;
+            case 1:
+            month ="february";
+            break;
+            case 2:
+            month ="march";
+            break;
+            case 3:
+            month ="april";
+            break;
+            case 4:
+            month ="may";
+            break;
+            case 5:
+            month ="june";
+            break;
+            case 6:
+            month ="july";
+            break;
+            case 7:
+            month ="august";
+            break;
+            case 8:
+            month ="september";
+            break;
+            case 9:
+            month ="october";
+            break;
+            case 10:
+            month ="november";
+            break;
+            case 11:
+            month ="december";
+            break;
+        
+            default:
+            day ="day not found";
+           }
+           document.getElementById('month').innerHTML ="month is - " + month;
+
+
+           let nums = [3,5,7,9,8]
+           nums.forEach((element)=>
+           {
+
+               console.log(element * element)
+           })
+
+    </script>
+    
+</body>
+</html>

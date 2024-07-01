@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>ARRAY</h2>
+<div id="names"></div>
+<div id="names0"></div>
+<div id="names1"></div>
+<div id="names2"></div>
+<div id="names3"></div>
+
+<br>
+<h2>if else</h2>
+<div id="msg"></div>
+
+    <script>
+
+  const student =["Sangita","Sonali","Subhu","Friends"];
+  document.getElementById('names').innerHTML=student;
+  document.getElementById('names0').innerHTML=student[0];
+  document.getElementById('names1').innerHTML=student[1];
+  document.getElementById('names2').innerHTML=student[2];
+  document.getElementById('names3').innerHTML=student[3];
+
+        let x = 20;
+            let msg;
+
+    if(x == 6){
+        msg = "its true";
+    }
+   else if(x == 20){
+        msg = "this is true";
+    }
+    else {
+        msg ="false";
+    }
+        
+   document.getElementById('msg').innerHTML=msg;
+
+
+
+
+
+    </script>
+</body>
+</html>

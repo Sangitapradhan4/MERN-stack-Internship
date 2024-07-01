@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>learn about const variable</h5>
+    <div id="detail"></div>
+    <div id="date"></div>
+    
+
+    <h3>STRING</h3>
+
+    <h3>string operation</h3>
+      <div id="count"></div>
+      <div id="split"></div>
+      <div id="uppercase"></div>
+      <div id="lowercase"></div>
+
+    <script type="text/javascript">
+
+        const ab = {
+            name : 'sangita',
+            age : 20,
+            Address : 'bhubaneswar',
+        };
+
+        document.getElementById('detail').innerHTML=ab.name  +'<br>' +ab.age +'<br>'+ ab.Address;
+        document.getElementById('date').innerHTML= Date();
+
+        let name ="sangita"
+        console.log (name);
+        console.log (name[0]);
+        console.log (name[1]);
+        console.log (name[2]);
+        console.log (name[3]);
+        console.log (name[4]);
+
+        let a ='abhijit'
+        console.log (a);
+        console.log (a[0]);
+        console.log (a[1]);
+        console.log (a[2]);
+        console.log (a[3]);
+        
+        
+        let b1 ='sangita'
+        let b2 ='icecream'
+         let love =`${b1} loves ${b2} so much`
+         console.log (love);
+
+
+          let x = "i am sangita";
+          count = x.length;
+          document.getElementById('count').innerHTML = count ;
+
+              let y = "sangita";
+              split =y.split('');
+              document.getElementById('split').innerHTML = split ;
+
+               let u="sangita";
+               U = u.toUpperCase();
+              document.getElementById('uppercase').innerHTML = U;
+
+              let l="sangita";
+               L= l.toLowerCase();
+             document.getElementById('lowercase').innerHTML = L;
+
+             console.log(l.replace("sangita" , "abhijit"))
+
+             let z = "   Pradhan   ";
+             console.log(z.trim())
+
+         let person ='sangita pradhan';
+
+         let s = 'aman raj aman'
+        console.log(s.replaceAll("aman","ram"))
+        ra = s.replaceAll("aman","ram");
+        document.getElementById('ral').innerHTML = ra ;
+
+        let person1 = 'sangita pradhan';
+        namesplit = person.split('');
+
+    </script>
+</body>
+</html>

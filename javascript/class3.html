@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ral"></div>
+    <div id="per"></div>
+    <script>
+        let s = 'aman raj aman'
+        console.log(s.replaceAll("aman","ram"))
+
+        ra = s.replaceAll("aman","ram");
+        document.getElementById('ral').innerHTML = ra ;
+
+        let person1 = 'Sangita Pradhan';
+        namesplit = person1.split('');
+        fn = namesplit[0];
+        ln = namesplit[1];
+        document.getElementById('per').innerHTML = fn[0] + ln[0] ;
+
+    </script>
+</body>
+</html>
