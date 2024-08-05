@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>promise chain</h1>
+    <script>
+    //Promise Chain
+        // function asyncFun() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log("Data1");
+        //             resolve("Success");
+        //         }, 3000);
+        //     });
+        // }
+
+        // function asyncFun2() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log("Data2");
+        //             resolve("Success");
+        //         }, 3000);
+        //     });
+        // }
+
+
+        // console.log("Fetching Data1...");
+
+        // let p1 = asyncFun();
+        // p1.then((res) => {
+        //     console.log(res);
+        //     console.log("Fetching Data2...");
+        //     asyncFun2().then((res) => {
+        //         console.log(res)
+        //     })
+        // })
+
+
+        //promise chain 2
+        function getData(id) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("Data", id);
+                    resolve("Success")
+                }, 2000)
+            })
+        }
+
+        // getData(100).then((res) => {
+        //     getData(200).then((res) => {
+        //         getData(500).then((res) => {
+        //             console.log(res);
+        //         })
+        //     })
+        // })
+        // or
+
+        getData(600).then((res) => {
+            return getData(700);
+        }).then((res) => {
+            return getData(800);
+        }).then((res) => {
+            console.log(res);
+        })
+    </script>
+    <h1>Async - await</h1>
+    <p>Async- it gives the promise output</p>
+    <script>
+        function api() {
+            return new Promise((resolve, reject) => {
+                setInterval(() => {
+                    console.log("Weather Data");
+                    resolve(200);
+                }, 3000);
+            });
+        }
+        async function getWeather() {
+            console.log("Data 1 loading")
+            await api();
+            console.log("Data 2 Loading")
+            await api();
+        }
+    //2
+
+       function dataGet(id){
+        return new Promise((resolve,reject) =>{
+            setTimeout(() =>{
+                console.log("Information",id);
+                resolve("sucessful");
+            },3000)
+        })
+       }
+
+       (async function newData() {     
+        console.log("Data 1 loading")
+        await dataGet(100);
+        console.log("Data 2 loading")
+        await dataGet(300);
+        console.log("Data 3 loading")
+        await dataGet(400);
+        console.log("Data 4 loading")
+        await dataGet(500).then((res) =>{
+            console.log(res);
+        }); 
+        
+       })();
+    </script>
+</body>
+</html>

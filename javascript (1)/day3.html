@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sp{
+            font-size: 50px;
+            color: blueviolet;
+            font-weight: 600;
+            background-color: rgb(189, 141, 234);
+        }
+    </style>
+</head>
+<body>
+    <marquee class="sp">sangita</marquee>
+    <h1>Jvascript Array Method</h1>
+    <ul>
+        <li>push</li>
+        <li>pop</li>
+        <li>shift</li>
+        <li>unshift</li>
+    </ul>
+    <script>
+        //push
+        //pop
+        //shift
+        //unshift
+
+        //push method add an element to the end of array
+        const arr = [1, 2, 3, 4, 5];
+        arr.push(6);
+        console.log(arr);
+
+        //pop
+        //pop method to remove an element from the end of an array
+         arr.pop()
+         console.log(arr);
+
+         //shift
+          //remove an element form the beginning of the array
+          arr.shift();
+          console.log(arr);
+
+          //unshift
+          //add an element from the beginning of the array
+          arr.unshift("aa");
+          console.log(arr);
+
+          //array length
+          //length is used to find the length of an array
+          console.log(arr.length);
+          console.log(arr);
+          console.log(arr[2]);
+          arr.push(9,8,7,6);
+          console.log(arr);
+          //console.log(arr[arr.length-1]);
+
+        
+          //slice and splice
+           //slice
+           //slice(starting index, ending index)
+           console.log(arr.slice(2,5));
+
+           //splice
+           //splice(starting index, no of element to delete,no of elements to add)
+           const arr1 =["hello","world","this","is","a", "demo","text"];
+           console.log(arr1);
+           const new_arr = arr1.splice(0,2,"demo","me");
+          console.log(new_arr);
+          console.log(arr1);
+
+          //sorting
+          const arr2 = [1,2,3,4,5,6,7,44,78,0,43];
+          console.log(arr1.sort());
+          console.log(arr2.sort());
+          //console.log(arr2.sort(function(a,b){return a-b})); //ascending order
+          console.log(arr2.sort(function(a,b){return b-a})); //decending order
+          
+          //comparison operator
+          //== and ===
+          //== equality operator
+          //=== strict equality operator
+          let a = "5";
+          let b = 5;
+          console.log(a == b); //returns true because it ignores the data type
+          //console.log(a === b); //returns false because it check the data type
+
+          //condition
+          //if
+          //if else
+          //if(condition){
+          //code}
+          let number = 6;
+          if(number == 5){
+            console.log("condition satisfied");
+          }
+          else{
+            console.log("condition not satisfied");
+          }
+          
+    </script>
+</body>
+</html>

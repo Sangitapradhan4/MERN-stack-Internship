@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Arithmetic</h1>
+<script>
+     
+    let a = 50;
+    let b = 60;
+    console.log(a+b);
+
+    let x = 5;
+    x++;
+    console.log(x);
+
+    let y = 5;
+    y--;
+    console.log(y);
+    
+    let z = 5;
+    console.log(z**2);
+
+</script>
+
+<h1>Jvascript Function</h1>
+<script>
+    function My_Fun(){
+        return 5*6;
+    }
+    console.log(My_Fun());
+
+    //dynamic function
+
+    function Calculate_degree(faranight){
+        return (faranight-32)*5/9;
+    }
+    console.log(Calculate_degree(360));
+</script>
+
+<h1>Jvascript Object</h1>
+
+<script>
+    const Student = {
+        name : "Sangita",
+        last : "Pradhan",
+        sem : "7th",
+        branch : "CSE",
+        Regdno : "2101297151",
+        mobileno : "7978767128",
+        Fullname : function(){
+            return this.name + ' ' + this.last;
+
+        }
+    }
+    console.log(Student.sem);//method1
+
+    console.log(Student["branch"]);//method2
+
+    let Regdno = "Regdno";
+    console.log(Student["Regdno"]);//method3
+
+    console.log(Student.Fullname());
+</script>
+
+<h1>Onclick Event</h1>
+<button onclick="getDate()">Get Date</button>
+<h3 id="date"></h3>
+<script>
+    function getDate(){
+        //return document.querySelector("#date").innerHTML = new Date();
+        //return document.querySelector("#date").innerHTML = new Date().getDate();
+        //return document.querySelector("#date").innerHTML = new Date().getDay();
+       // return document.querySelector("#date").innerHTML = new Date().tolocalDatestring();
+       //return document.querySelector("#date").innerHTML = new Date().getFullYear();
+        return document.querySelector("#date").innerHTML = new Date().getMonth();
+    }
+</script>
+<h1>Javascript String</h1>
+<script>
+    let name = ' Sangita Pradhan ';
+    console.log(name.length);
+
+    name = name.trim();
+  // name = name.trimStart();
+  //name = name.trimEnd();
+    console.log(name.length);
+
+    //replace
+    let text = 'Our College Name is GIFT';
+    let newtext = text.replace(/Gift/i,"NIT");//case sensitive convert into insensitive
+    console.log(newtext);
+</script>
+<h1>Javascript Split</h1>
+<script>
+    let img = 'img9.jpeg';
+    const mysplit = img.split('.');
+    console.log(mysplit[1]);
+
+    let name1 = 'Sangita Pradhan';
+    const Nsplit = name1.split(' ');
+    console.log(Nsplit[1]);
+</script>
+
+ <h1>Javascript Array</h1>
+ <script>
+    const Fruit = ["apple",5,"mango",20];
+    console.log(Fruit[2]);
+    Fruit[0] = 'banana'; //reasign data
+    console.log(Fruit[0]);
+    console.log(Fruit.toString());//convert array to string
+
+    const Fruit2 = Fruit.toString();
+    const Fruit3 = Fruit2.split(',');
+    console.log(Fruit3); //convert string to array
+ </script>
+
+</body>
+</html>

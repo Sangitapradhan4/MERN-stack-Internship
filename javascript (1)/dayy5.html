@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[23, 3, 5, 4, 22, 46, 1, 34, 98, 99, 34, 65, 37, 34, 56, 33];
+        const even=[];
+        const odd=[];
+        for(let i=0; i<arr.length; i++){
+            if(arr[i]%2 == 0){
+                even.push(arr[i]);
+            }
+            else{
+                odd.push(arr[i]);
+            }
+            
+        }
+        console.log(even);
+        console.log(odd);
+    </script>
+
+    <ul>
+        <li>Callback</li>
+        <li>Callback Hell</li>
+        <li>Promiss</li>
+        <li>promise chain</li>
+        <li>await</li>
+        <li>async</li>
+    </ul>
+    <script>
+        console.log('ONE');
+        console.log('FOUR');
+        console.log('THREE');
+        console.log('TWO');
+        console.log('ONE');
+
+        function Hello(){
+            console.log('Hello NIT,Good Bye!');
+        }
+    
+        setTimeout(Hello, 3000); //3sec
+
+        //callback
+
+        function sum(a,b){
+            console.log(a+b);
+        }
+
+        function data(a,b,sumcallback){
+            sumcallback(a,b);
+        }
+
+        data(5,7,sum);
+
+        //callbackhell
+      
+        function getData(id ,getNextdata){
+            setTimeout(()=>{
+                console.log("Data",id);
+                if(getNextdata){
+                getNextdata();
+                }
+            },2000)                
+        }
+        console.log("Data 1 is loading...");
+        getData(500,() =>{
+            console.log("Data 2 is loading...");
+            getData(100,() =>{
+                console.log("Data 3 is loading...");
+                getData(300,() =>{
+                    console.log("Data 4 is loading...");
+                    getData(400);
+                });
+            });
+        });
+
+
+        //promise
+        let promise = new Promise((resolve,reject) =>{
+            console.log("I promise you that i will kill you for sure...");
+           // resolve("i will do my promise at any cost...");
+          resolve(200);
+         //reject("i reject my promise okey");
+        })
+        promise.then((res) =>{
+            console.log("promise Fullfilled",res);
+        })
+        promise.catch((arr) =>{
+            console.log("promise rejected",arr);
+        })
+
+    </script>
+</body>
+</html>

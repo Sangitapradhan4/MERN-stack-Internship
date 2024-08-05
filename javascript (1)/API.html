@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <table class="table table-bordered">
+        <tr>
+          <th>User Name</th>
+          <td id="user_name"></td>
+        </tr>
+        <tr>
+          <th>User Login</th>
+          <td id="user_login"></td>
+        </tr>
+
+        <tr>
+          <th>User Bio</th>
+          <td id="user_bio"></td>
+        </tr>
+        <tr>
+          <th>User Image</th>
+          <td>
+            <img src="" id="user_image" alt="">
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      async function fetchgit() {
+        try {
+          let response = await fetch(
+            "https://api.github.com/users/debanjali081"
+          );
+          if (!response.ok) {
+            alert("API Error");
+          }
+          let data = await response.json();
+          //console.log(data);
+          document.querySelector("#user_name").innerHTML = data.name;
+          document.querySelector("#user_login").innerHTML = data.login;
+          document.querySelector("#user_image").src = data.avatar_url;
+          document.querySelector("#user_bio").innerHTML = data.bio; //name is the key of the value
+        } catch (err) {
+          alert("Something gone wrong");
+        }
+      }
+      fetchgit();
+    </script>
+
+    <section>
+      <h1 class="our1">OUR PRODUCTS</h1>
+      <div class="container">
+        <div id="product_grid" class="card_grid">
+
+        </div>
+      </div>
+    </section>
+    <script>
+      const product_grid = document.querySelector("#product_grid");
+      fetch("https://fakestoreapi.com/products")
+      .then(response => response.json())
+  </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

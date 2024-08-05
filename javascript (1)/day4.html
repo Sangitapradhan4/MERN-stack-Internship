@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+    <h1>comparison operator</h1>
+    <ul>
+        <li><</li>
+        <li><=</li>
+        <li>></li>
+        <li>>=</li>
+        <li>==</li>
+        <li>===</li>
+        <li>!=</li>
+    </ul>
+    <script>
+
+        //comparison operator
+        //<
+       console.log(5 < 5);
+
+        //<=
+        console.log(5 <= 5);
+
+        //>
+         console.log(5 > 5);
+
+         //>=
+         console.log(5 >= 5);
+
+        //==
+        //console.log(a == a);
+
+        //===
+
+        //!=
+        //console.log( s != 4);
+
+       // comparison  for non Numbers
+       //console.log('a' == 'A');
+    </script>
+
+    <h1>condition statement</h1>
+    <ul>
+        <li> if condition</li>
+        <li> if else condition</li>
+        <li> nested condition</li>
+        <li> switch condition</li>
+    </ul>
+
+    <script>
+    //condition statement
+    //if condition
+               //if(condition) {
+               //some code}
+               let age = 16;
+               if(age >= 18){
+                console.log("eligible for vote");
+               }
+
+       //if else condition
+              //if(condition){
+              //some code
+              //}
+               //else{
+               // some code
+               //}
+
+       let agee = 16;
+       if(age >= 18){
+        console.log("eligible for vote");
+       }
+       else{
+        console.log("you are not eligible");
+       }
+       
+       //nested if condition
+          //if(condition){
+              // if(condition){
+              //some code}
+              //code
+              //} else {
+              //else block
+              //}
+
+       let marks = 50;
+       if(marks >= 40){
+        if(marks > 40 && marks <=60){
+            console.log("grade D");
+        }
+        else if(marks > 60 && marks <=70){
+            console.log("grade C");
+        }
+        else if(marks > 70 && marks <=80){
+            console.log("grade B");
+        }
+        else if(marks > 80 && marks <=90){
+            console.log("grade A");
+        }
+        else if(marks > 90 && marks <=100){
+            console.log("grade O");
+        }
+       }
+       else{
+        console.log("you are fail");
+       }
+
+       //switch condition
+       let light = "red";
+       switch(light) {
+        case "green":
+        console.log("go");
+        break;
+        case "Yellow":
+        console.log("warning");
+        break;
+        case "red":
+        console.log("stop");
+        break;
+        default:
+        console.log("invalid");
+       }
+
+       //example 2
+    let day = new Date();
+    day = day.getDay();
+    console.log(day);
+    switch(day){
+        case 0:
+        console.log("Sunday");
+        break;
+        case 1:
+        console.log("Monday");
+        break;
+        case 2:
+        console.log("Tuesday");
+        break;
+        case 3:
+        console.log("Wednesday");
+        break;
+        case 4:
+        console.log("Thursday");
+        break;
+        case 5:
+        console.log("Friday");
+        break;
+        case 6:
+        console.log("Saturday");
+        break;
+        default:
+        console.log("invalid day");
+    }
+    </script>
+
+    <h1>LOOP</h1>
+    <ul>
+        <li> for loop</li>
+        <li> while loop</li>
+        <li>do while loop</li>
+    </ul> 
+<script>
+    //for loop
+    //syntax
+    //for(initialization,stopping condition,updation){
+    //code block
+    //}
+
+     // for(let i = 2;i < 10; i = i + 2){
+        //     console.log(i);
+
+        // }
+       
+        // while loop
+        //let i = 0;
+        // while(condition)
+        // {
+        //i++;
+        // code block
+        //}
+
+
+        // let j = 2;
+        // while(j<=10){
+        //     console.log(j);
+        //     i+=3;
+        // }
+
+
+
+        //do while loop
+        //do{
+        //code block
+        // }while(condition)
+
+        let k = 1;
+        do{
+           
+            console.log(k);
+            k++;
+        }
+        while(k<=10)
+        const even=[];
+        const odd=[];
+        // let end = prompt("enter a number")
+        for(let i=0;i<= 10; i++) {
+            if(i%2 == 0){
+                even.push(i);
+            }else{
+                odd.push(i);
+            }
+        }
+        console.log(even);
+        console.log(odd); 
+</script>
+   
+</body>
+</html>
